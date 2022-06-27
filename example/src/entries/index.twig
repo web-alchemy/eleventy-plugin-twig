@@ -1,0 +1,25 @@
+---
+layout: main.twig
+permalink: /
+title: Twig Example
+items:
+  - a
+  - b
+  - c
+  - d
+---
+<h1>Hello, {{ title }}</h1>
+
+<p>{{ '<b>test `autoescape`</b>' }}</p>
+
+<ul>
+  {% for item in items %}
+    <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+
+{% embed "includes::button/button.twig" with { type: 'submit' } %}
+  {% block content %}
+    click me
+  {% endblock %}
+{% endembed %}

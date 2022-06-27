@@ -1,0 +1,33 @@
+{
+  "name": "@web-alchemy/eleventy-plugin-twig",
+  "version": "0.0.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-alchemy/eleventy-plugin-twig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web-alchemy/eleventy-plugin-twig/issues"
+  },
+  "homepage": "https://github.com/web-alchemy/eleventy-plugin-twig",
+  "peerDependencies": {
+    "@11ty/eleventy": "*",
+    "twig": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "twig",
+    "twig.js",
+    "template engine"
+  ]
+}
