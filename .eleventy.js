@@ -22,7 +22,9 @@ module.exports = function(eleventyConfig, userOptions = {}) {
           this.config
         ])
         if (shouldSkip) {
-          return
+          // just return `undefined` when this fix will be available
+          // https://github.com/11ty/eleventy/pull/2358
+          return () => {}
         }
       }
 
