@@ -16,9 +16,11 @@
     "url": "https://github.com/web-alchemy/eleventy-plugin-twig/issues"
   },
   "homepage": "https://github.com/web-alchemy/eleventy-plugin-twig",
+  "dependencies": {
+    "twig": "^1.17.1"
+  },
   "peerDependencies": {
-    "@11ty/eleventy": "*",
-    "twig": "*"
+    "@11ty/eleventy": "*"
   },
   "publishConfig": {
     "access": "public"
