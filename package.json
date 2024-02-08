@@ -1,6 +1,6 @@
 {
   "name": "@web-alchemy/eleventy-plugin-twig",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": ".eleventy.js",
   "scripts": {
     "postpublish": "git push origin --all; git push origin --tags",
